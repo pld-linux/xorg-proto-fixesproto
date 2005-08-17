@@ -1,4 +1,4 @@
-# $Rev: 3264 $, $Date: 2005-08-15 12:17:57 $
+# $Rev: 3264 $, $Date: 2005-08-17 20:16:28 $
 #
 Summary:	Fixes protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u Fixes i pomocnicze
@@ -31,6 +31,7 @@ Summary(pl):	Nag³ówki protoko³u Fixes i pomocnicze
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xextproto-devel
 Requires:	xorg-proto-xproto-devel
+Obsoletes:	fixesext
 
 %description devel
 Fixes protocol and ancillary headers.
