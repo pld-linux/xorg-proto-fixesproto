@@ -1,5 +1,3 @@
-# $Rev: 3264 $, $Date: 2005-08-17 20:16:28 $
-#
 Summary:	Fixes protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u Fixes i pomocnicze
 Name:		xorg-proto-fixesproto
@@ -12,9 +10,9 @@ Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/proto/fixesproto-%{version}.tar
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros
 BuildRequires:	pkg-config
-BuildRoot:	%{tmpdir}/fixesproto-%{version}-root-%(id -u -n)
+BuildRequires:	xorg-util-util-macros
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
@@ -23,7 +21,6 @@ Fixes protocol and ancillary headers.
 
 %description -l pl
 Nag³ówki protoko³u Fixes i pomocnicze.
-
 
 %package devel
 Summary:	Fixes protocol and ancillary headers
@@ -39,10 +36,8 @@ Fixes protocol and ancillary headers.
 %description devel -l pl
 Nag³ówki protoko³u Fixes i pomocnicze.
 
-
 %prep
 %setup -q -n fixesproto-%{version}
-
 
 %build
 %{__aclocal}
@@ -52,7 +47,6 @@ Nag³ówki protoko³u Fixes i pomocnicze.
 
 %{__make}
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
@@ -60,10 +54,8 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	pkgconfigdir=%{_pkgconfigdir}
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files devel
 %defattr(644,root,root,755)
