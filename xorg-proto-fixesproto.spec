@@ -1,12 +1,12 @@
 Summary:	Fixes protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u Fixes i pomocnicze
 Name:		xorg-proto-fixesproto
-Version:	3.0
-Release:	0.03
+Version:	3.0.1
+Release:	0.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/proto/fixesproto-%{version}.tar.bz2
-# Source0-md5:	001a51cca8e764e362fe98e61c22d54e
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/proto/fixesproto-%{version}.tar.bz2
+# Source0-md5:	dc3c1df35b16bfd673e55b83cab8b361
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
