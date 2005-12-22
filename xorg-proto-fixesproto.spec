@@ -5,8 +5,8 @@ Version:	3.0.2
 Release:	0.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC4/proto/fixesproto-%{version}.tar.bz2
-# Source0-md5:	f748f5b72294741ce1f1ca322f3e6ec1
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/proto/fixesproto-X11R7.0-%{version}.tar.bz2
+# Source0-md5:	ff8899d2325ed8a5787cde372ca8f80f
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -34,7 +34,7 @@ Fixes protocol and ancillary headers.
 Nag³ówki protoko³u Fixes i pomocnicze.
 
 %prep
-%setup -q -n fixesproto-%{version}
+%setup -q -n fixesproto-X11R7.0-%{version}
 
 %build
 %{__aclocal}
