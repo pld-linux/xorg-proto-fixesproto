@@ -1,5 +1,5 @@
 Summary:	Fixes protocol and ancillary headers
-Summary(pl):	Nag丑wki protoko硊 Fixes i pomocnicze
+Summary(pl.UTF-8):   Nag艂贸wki protoko艂u Fixes i pomocnicze
 Name:		xorg-proto-fixesproto
 Version:	4.0
 Release:	1
@@ -16,12 +16,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Fixes protocol and ancillary headers.
 
-%description -l pl
-Nag丑wki protoko硊 Fixes i pomocnicze.
+%description -l pl.UTF-8
+Nag艂贸wki protoko艂u Fixes i pomocnicze.
 
 %package devel
 Summary:	Fixes protocol and ancillary headers
-Summary(pl):	Nag丑wki protoko硊 Fixes i pomocnicze
+Summary(pl.UTF-8):   Nag艂贸wki protoko艂u Fixes i pomocnicze
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xextproto-devel
 Requires:	xorg-proto-xproto-devel
@@ -30,8 +30,8 @@ Obsoletes:	fixesext
 %description devel
 Fixes protocol and ancillary headers.
 
-%description devel -l pl
-Nag丑wki protoko硊 Fixes i pomocnicze.
+%description devel -l pl.UTF-8
+Nag艂贸wki protoko艂u Fixes i pomocnicze.
 
 %prep
 %setup -q -n fixesproto-%{version}
