@@ -2,7 +2,7 @@ Summary:	Fixes protocol and ancillary headers
 Summary(pl.UTF-8):	Nagłówki protokołu Fixes i pomocnicze
 Name:		xorg-proto-fixesproto
 Version:	4.1
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/fixesproto-%{version}.tar.bz2
@@ -23,7 +23,7 @@ Nagłówki protokołu Fixes i pomocnicze.
 Summary:	Fixes protocol and ancillary headers
 Summary(pl.UTF-8):	Nagłówki protokołu Fixes i pomocnicze
 Group:		X11/Development/Libraries
-Requires:	xorg-proto-xextproto-devel
+Requires:	xorg-proto-xextproto-devel >= 7.0.99.1
 Requires:	xorg-proto-xproto-devel
 Obsoletes:	fixesext
 
