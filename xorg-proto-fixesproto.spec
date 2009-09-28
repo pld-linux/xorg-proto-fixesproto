@@ -1,5 +1,5 @@
-Summary:	Fixes protocol and ancillary headers
-Summary(pl.UTF-8):	Nagłówki protokołu Fixes i pomocnicze
+Summary:	X Fixes extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia X Fixes
 Name:		xorg-proto-fixesproto
 Version:	4.1
 Release:	1
@@ -10,28 +10,28 @@ Source0:	http://xorg.freedesktop.org/releases/individual/proto/fixesproto-%{vers
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros
+BuildRequires:	xorg-util-util-macros >= 1.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Fixes protocol and ancillary headers.
+X Fixes extension headers.
 
 %description -l pl.UTF-8
-Nagłówki protokołu Fixes i pomocnicze.
+Nagłówki rozszerzenia X Fixes.
 
 %package devel
-Summary:	Fixes protocol and ancillary headers
-Summary(pl.UTF-8):	Nagłówki protokołu Fixes i pomocnicze
+Summary:	X Fixes extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia X Fixes
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-xextproto-devel >= 1:7.1.0
 Requires:	xorg-proto-xproto-devel
 Obsoletes:	fixesext
 
 %description devel
-Fixes protocol and ancillary headers.
+X Fixes extension headers.
 
 %description devel -l pl.UTF-8
-Nagłówki protokołu Fixes i pomocnicze.
+Nagłówki rozszerzenia X Fixes.
 
 %prep
 %setup -q -n fixesproto-%{version}
@@ -56,6 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
-%{_includedir}/X11/extensions/*.h
+%doc COPYING ChangeLog fixesproto.txt
+%{_includedir}/X11/extensions/xfixes*.h
 %{_pkgconfigdir}/fixesproto.pc
