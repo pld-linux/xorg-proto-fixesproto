@@ -1,14 +1,14 @@
 Summary:	X Fixes extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia X Fixes
 Name:		xorg-proto-fixesproto
-Version:	4.1.1
+Version:	4.1.2
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/fixesproto-%{version}.tar.bz2
-# Source0-md5:	4c1cb4f2ed9f34de59f2f04783ca9483
+# Source0-md5:	bdb58ecc313b509247036d5c11fa99df
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	xorg-util-util-macros >= 1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
