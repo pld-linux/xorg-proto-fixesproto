@@ -1,12 +1,12 @@
 Summary:	X Fixes extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia X Fixes
 Name:		xorg-proto-fixesproto
-Version:	4.1.2
+Version:	5.0
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/fixesproto-%{version}.tar.bz2
-# Source0-md5:	bdb58ecc313b509247036d5c11fa99df
+# Source0-md5:	e7431ab84d37b2678af71e29355e101d
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
@@ -48,14 +48,13 @@ Pliki nagłówkowe i dokumentacja do rozszerzenia XFIXES.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	pkgconfigdir=%{_pkgconfigdir}
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog README fixesproto.txt
+%doc AUTHORS COPYING ChangeLog README fixesproto.txt
 %{_includedir}/X11/extensions/xfixes*.h
 %{_pkgconfigdir}/fixesproto.pc
