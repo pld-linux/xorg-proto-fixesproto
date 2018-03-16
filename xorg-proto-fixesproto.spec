@@ -1,13 +1,14 @@
+# NOTE: now maintained in xorg-proto-xorgproto.spec
 Summary:	X Fixes extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia X Fixes
 Name:		xorg-proto-fixesproto
 Version:	5.0
-Release:	2
+Release:	2.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/individual/proto/fixesproto-%{version}.tar.bz2
+Source0:	https://xorg.freedesktop.org/releases/individual/proto/fixesproto-%{version}.tar.bz2
 # Source0-md5:	e7431ab84d37b2678af71e29355e101d
-URL:		http://xorg.freedesktop.org/
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	xorg-util-util-macros >= 1.3
